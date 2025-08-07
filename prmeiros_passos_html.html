@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira página em html</title>
+</head>
+<body>
+    <header><h1>Aprendendo HTML</h1></header>
+    <hr/>
+    <main>
+    <h2 id="sobre">Sobre o HTML</h2>
+    <p> HTML, ou Linguagem de Marcação de Hipertexto, é a base da web. É a linguagem usada para estruturar o conteúdo de páginas da internet, definindo como o texto, imagens, e outros elementos são organizados e exibidos. O HTML não é uma linguagem de programação, mas sim uma linguagem de marcação, que usa tags para definir a estrutura e o significado do conteúdo.</p>
+
+    <h2 id="primeiras-tags">Primeiras Tags</h2>
+    <h3><u>Antes de tudo, o que são tags?</u></h3>
+    <p>Tags são utilizadas para estruturar o html, elas são utilizadas para informar o navegador que tipo de conteúdo está sendo apresentado e em que formato se deseja. As tags geralmente vêm em pares, com uma tag de abertura e uma de fechamento, como "&lt;p&gt; e &lt;/p&gt;" para parágrafos, mas algumas tags são auto fecháveis. </p>
+
+    <h3>Tags de título:</h3>
+    <p>Inicialmente temos as tags de titulos, tags que destacam o texto, a tag utilizada é &lt;hn&gt; onde o <b>n</b> é um número que vai de 1 a 6, e é referente ao tamanho do titulo, o &lt;h1&gt; para o maior titulo da página, e assim respectivamente. Vejamos o exemplo abaixo: </p>
+    <blockquote><h1>Exemplo de titulo: &lt;h1&gt; </h1></blockquote>
+    <blockquote><h2>Exemplo de titulo: &lt;h2&gt; </h2></blockquote>
+    <blockquote><h3>Exemplo de titulo: &lt;h3&gt; </h3></blockquote>
+    <blockquote><h4>Exemplo de titulo: &lt;h4&gt; </h4></blockquote>
+    <blockquote><h5>Exemplo de titulo: &lt;h5&gt; </h5></blockquote>
+    <blockquote><h6>Exemplo de titulo: &lt;h6&gt; </h6></blockquote>
+
+    <h3>Tags de formatação de texto</h3>
+    <ul>
+        <li>Para o texto em negrito temos duas opções:
+            <ul>Texto em <b>negrito</b>, só para destacar um texto, sem peso no corpo, use: &lt;b&gt; </ul>
+            <ul>Texto em <strong>negrito</strong>, mas com peso semântico, com importância no corpo da página, use: &lt;strong&gt; </ul>
+        </li>
+        <li><i>Texto em itálico, use:</i> &lt;i&gt; </li>
+        <li><u>Texto sublinhado, use:</u> &lt;u&gt; </li>
+        <li><mark>Texto com marcação, tipo marca texto, use:</mark> &lt;mark&gt; </li>
+        <li>Para colocar um número ao quadrado 10<sup>2</sup>, coloque o número a ser elevado entre a tag: &lt;sup&gt; </li>
+        <li style="color: blue;">Para colorir um texto, usar o atributo da tag utilizada,"style", assim: &lt;p style = "color: blue;" </li>
+        <li>Para evidenciar a correção de um texto,como, <del>R$100</del> ,utilizamos &lt;del&gt; </li>
+        <li>Para definir uma sigla e mostrar o seu significado ao passar o mouse, dessa forma: <abbr title="Linguagem de marcação de Hipertexto">HTML</abbr> utilizamos a tag : &lt;abbr&gt; </li>
+        <li>Temos a tag &lt;font&gt; que serve para  definir fonte, cor, tamanho.. porém é uma tag obsoleta pois fazemos isso com o css, veja o exemplo do que ela faz: <font color="red" size="5" face="Comic Sans MS">Texto Formatado</font></li>
+    </ul>
+
+    <h3 id="tags_estrutura_texto">Tags para estruturar o texto</h3>
+
+    <p>Para inserir um paragrafo de texto simples, utilizamos a tag &lt;p&gt; </BR>
+    Para adicionar um bloco de texto, mais espaçado da margem, em maior destaque podemos utilizar a tag &lt;blockquote&gt; veja o exemplo abaixo: <br> 
+    <blockquote>Área de texto em destaque</blockquote>
+
+    </p>
+
+    <h3 id="tags_insercao">Tags para inserção de conteúdo, receber dados:</h3>
+
+    <p>Para inserir campos de texto, ou seja, campos que recebem um dado em texto do usuário, utilizamos a tag &lt;input type="text"&gt; dessa forma o campo é criado da seguinte forma: <br>
+    <h4>Digite o seu nome: <input type="text"></h4> 
+    da mesma forma para campos numericos, mas no capo type substituimos por "number": <br>
+    <h4>Digite sua idade: <input type="number"></h4>
+    para adicionar o texto antes do campo input, é só utilizar uma tag de texto "hn" antes da tag input, assim: &lt;h4&gt;texto&lt;h4/&gt;&lt;input type="text"&gt;,
+    <h4>Inserir Imagem:</h4>Para adicionar uma imagem utilizamos a tag &lt;img&gt;, nela existe o atributo "src", é nesse qe iremos colocar o endereço da imagem, que pode ser tanto local como externo.
+    <br>
+    <img width=400 src="https://experienceclub.com.br/wp-content/uploads/2022/06/CARTA-DO-CEO-18.jpg" >
+    
+    <h4>Inserir um link</h4> Para adicionar um link, utilizados a tag &lt;a&gt;
+    dessa forma, &lt;a href="caminho da imagem"&gt; &gt; Clique aqui &lt;/a&gt;
+    adicionando outros atributos além do href como title(Para aparecer um texto ao passar o mouse por cima) ou target(que define qual será o direcionamento da página ao clicar), veja os exemplos abaixo:
+
+    <h5><b>Com titulo ao passar o mouse</b> e indo para outra aba</h5> 
+    <a href="https://www.dio.me" title="Click aqui e acesse" target="_blank">DIO.me</a>
+    <h5><b>Com titulo ao passar o mouse</b> e abrindo na mesma página</h5>
+    <a href="https://www.dio.me" title="Click aqui e acesse" target="_self">Dio.me</a>
+
+
+
+
+
+
+    
+
+    </main>
+</body>
+</html>
